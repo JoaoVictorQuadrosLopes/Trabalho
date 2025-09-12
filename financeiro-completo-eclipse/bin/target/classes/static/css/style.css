@@ -1,0 +1,162 @@
+/* ====== RESET BÁSICO ====== */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== GLOBAL ====== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ====== DARK MODE ====== */
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: #e6e6e6;
+}
+
+body.dark-mode .card {
+    background-color: #2b2b2b;
+    color: #e6e6e6;
+    border: 1px solid #444;
+}
+
+body.dark-mode .table {
+    color: #ddd;
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #2f2f2f;
+}
+
+body.dark-mode .btn-outline-secondary {
+    border-color: #aaa;
+    color: #eee;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* ====== HEADER ====== */
+h1 {
+    font-weight: 700;
+    color: #007bff;
+}
+
+body.dark-mode h1 {
+    color: #00c6ff;
+}
+
+/* ====== BOTÕES ====== */
+.btn {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Botão de sucesso */
+.btn-success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #218838, #17a589);
+}
+
+/* Botão primário */
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #00bfff);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0062cc, #0099cc);
+}
+
+/* Botão de perigo */
+.btn-danger {
+    background: linear-gradient(135deg, #dc3545, #e55353);
+    border: none;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #c82333, #cc4444);
+}
+
+/* ====== CARDS ====== */
+.card {
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Card header */
+.card-header {
+    font-weight: 600;
+    background: #f8f9fa;
+    border-bottom: 2px solid #eee;
+}
+
+body.dark-mode .card-header {
+    background: #2a2a2a;
+    border-bottom: 1px solid #444;
+}
+
+/* ====== TABELA ====== */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background: #007bff;
+    color: white;
+    font-weight: 600;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transition: background 0.2s;
+}
+
+body.dark-mode .table thead {
+    background: #00c6ff;
+    color: #111;
+}
+
+/* ====== BADGES ====== */
+.badge {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* ====== GRAFICO ====== */
+canvas {
+    max-height: 300px;
+}
+
+/* ====== TOGGLE DARK MODE ====== */
+#toggleTheme {
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+}
